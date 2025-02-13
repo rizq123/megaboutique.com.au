@@ -1,0 +1,15 @@
+* {
+  outline: 5px solid red;
+}
+
+.contact-link {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(https://img-cdn-02.megaboutique.com.au/icons/nate/Sprite.png);
+  background-repeat: no-repeat;
+  width: 46px;
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+}
