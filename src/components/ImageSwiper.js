@@ -22,6 +22,7 @@ export default function App() {
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
+      console.log(index, className);
       return '<span class="' + className + '">' + (index + 1) + '</span>';
     },
   };
@@ -29,6 +30,10 @@ export default function App() {
   return (
     <section className="container mx-auto my-2 md:my-4 flex items-center md:px-4">
       <Swiper
+      style={{
+        "--swiper-pagination-color": "#FC6D46",
+        "--swiper-pagination-bullet-size": "18px",
+      }}
         pagination={pagination}
         modules={[Pagination]}
         className="mySwiper"
