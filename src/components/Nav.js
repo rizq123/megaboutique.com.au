@@ -14,7 +14,7 @@ const Nav = () => {
           {/* Other Menu Items */}
           <div className="flex space-x-8 py-2">
             {["SHOP BY BRAND", "NEW ARRIVALS", "SALE", "CLEARANCE", "GIFTS", "BLOGS"].map((item, index) => (
-              <a key={index} href="#" className="text-black font-semibold text-sm hover:text-red-500 transition bg-opacity-0 hover:bg-opacity-10 px-2 py-1 rounded cursor-pointer">
+              <a key={index} href={`/${item.toLowerCase().replace(/ /g, '-')}`} className="text-black font-semibold text-sm hover:text-red-500 transition bg-opacity-0 hover:bg-opacity-10 px-2 py-1 rounded cursor-pointer">
                 {item}
               </a>
             ))}
@@ -25,7 +25,7 @@ const Nav = () => {
       <div className="bg-[#363434] text-white hidden md:block">
         <div className="h-[35px] max-w-[1200px] mx-auto flex justify-evenly items-center px-3">
           <div className="flex items-center gap-2 hover:opacity-75 hover:text-red-500 cursor-pointer">
-            <Image src="/images/shipping.png" alt="Free Shipping" width={30} height={30} />
+            <Image src="/images/shipping.png" alt="Free Shipping over $99" width={30} height={30} />
             <p>Free Shipping over $99</p>
           </div>
           <div className="flex items-center gap-2 hover:opacity-75 hover:text-red-500 cursor-pointer">

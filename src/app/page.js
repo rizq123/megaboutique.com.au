@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Banner from "../components/Banner";
 import Header from "../components/Header";
 import HeaderMobile from "../components/HeaderMobile";
@@ -23,6 +24,9 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+        <meta name="description" content="Mega Boutique offers a wide range of premium housewares and kitchen supplies. Shop online for quality cookware, kitchenware, and home accessories." />
+      </Head>
       <div className="sticky top-0 z-50 hidden md:block">
         <Banner />
         <Header />

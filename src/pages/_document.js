@@ -4,12 +4,10 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <script
-          id="ze-snippet"
-          src="https://static.zdassets.com/ekr/snippet.js?key=bdfb3295-ab39-4336-a27f-f5ddb3878a91"
-          async
-          defer
-        ></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Mega Boutique - Your Ultimate Home Housewares & Kitchen Supply Shop" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.megaboutique.com.au/" />
       </Head>
       <body>
         <Main />
